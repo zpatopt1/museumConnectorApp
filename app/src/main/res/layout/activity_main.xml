@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:id="@+id/imagemfundo"
+        android:layout_width="400dp"
+        android:layout_height="839dp"
+        android:background="@drawable/home_page_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textomuseumconnect"
+        android:layout_width="318dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="428dp"
+        android:text="@string/museumconnect"
+        android:textAppearance="@style/museumconnect"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imagemfundo" />
+
+    <Button
+        android:id="@+id/ExploreButton"
+        android:layout_width="339dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="44dp"
+        android:text="Explore já"
+        android:background="@drawable/rectangle_button_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textomuseumconnect" />
+
+    <Button
+        android:id="@+id/ReserveButton"
+        android:layout_width="339dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="27dp"
+        android:text="Reserve Já"
+        android:background="@drawable/rectangle_button_white"
+        app:layout_constraintEnd_toEndOf="@+id/ExploreButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ExploreButton"
+        app:layout_constraintTop_toBottomOf="@+id/ExploreButton" />
+
+    <Button
+        android:id="@+id/QrCodeButton"
+        android:layout_width="339dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="#605E79"
+        android:text="QRCODE"
+        android:background="@drawable/rectangle_button"
+        app:layout_constraintEnd_toEndOf="@+id/ReserveButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ReserveButton"
+        app:layout_constraintTop_toBottomOf="@+id/ReserveButton" />
+
+    <TextView
+        android:id="@+id/not_register"
+        android:layout_width="195dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="16dp"
+        android:text="Not register yet ? Create Account"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/QrCodeButton"
+        app:layout_constraintStart_toStartOf="@+id/QrCodeButton"
+        app:layout_constraintTop_toBottomOf="@+id/QrCodeButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

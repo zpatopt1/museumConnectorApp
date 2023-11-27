@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_menu">
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name=""
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_navigation_account_to_mudar_usuario"
+            app:destination="@id/mudar_usuario" />
+        <action
+            android:id="@+id/action_navigation_account_to_forma_pagamento"
+            app:destination="@id/forma_pagamento" />
+        <action
+            android:id="@+id/action_navigation_account_to_mudar_passe"
+            app:destination="@id/mudar_passe" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mudar_passe"
+        android:name="com.example.museumConnect.mudar_passe"
+        android:label="fragment_mudar_passe"
+        tools:layout="@layout/fragment_mudar_passe" />
+    <fragment
+        android:id="@+id/mudar_usuario"
+        android:name="com.example.museumConnect.mudar_usuario"
+        android:label="fragment_mudar_usuario"
+        tools:layout="@layout/fragment_mudar_usuario" />
+    <fragment
+        android:id="@+id/forma_pagamento"
+        android:name="com.example.museumConnect.mudar_contactos"
+        android:label="fragment_forma_pagamento"
+        tools:layout="@layout/fragment_mudar_contactos" />
+</navigation>
